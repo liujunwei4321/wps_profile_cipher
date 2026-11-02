@@ -1,0 +1,4329 @@
+[
+ {
+  "section": "Auth",
+  "key": "ProductDefinition",
+  "desc": "其他产品验证相关选项，未测试 (GNU/Linux)",
+  "notes": [],
+  "widget": "enum",
+  "options": [
+   {
+    "label": "专业版",
+    "value": "Professional"
+   },
+   {
+    "label": "个人版",
+    "value": "Personal"
+   }
+  ],
+  "default": "Professional",
+  "group": "版本标识",
+  "risk": "high"
+ },
+ {
+  "section": "Auth",
+  "key": "SubPlatform",
+  "desc": "指定程序的子平台版本 (GNU/Linux)",
+  "notes": [
+   "不同的子平台，序列号互不通用",
+   "1：AK - WPS Office for GNU/Linux 普通版本",
+   "2：JK - 金山麒麟 WPS",
+   "3：ZYJ - 金山志远 WPS"
+  ],
+  "widget": "enum",
+  "options": [
+   {
+    "label": "AK — WPS Office for GNU/Linux 普通版本",
+    "value": "1"
+   },
+   {
+    "label": "JK — 金山麒麟 WPS",
+    "value": "2"
+   },
+   {
+    "label": "ZYJ — 金山志远 WPS",
+    "value": "3"
+   }
+  ],
+  "default": "1",
+  "group": "版本标识",
+  "risk": "high"
+ },
+ {
+  "section": "Category",
+  "key": "linux_domestic",
+  "desc": "是否为 GNU/Linux 国内版本（等待进一步研究）",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "1",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Product",
+  "key": "CustomerFlag",
+  "desc": "对接定制版本产品参数（等待进一步研究）",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "digitalgd",
+  "group": "版本标识",
+  "risk": "high"
+ },
+ {
+  "section": "Product",
+  "key": "OfficialSpecialWord",
+  "desc": "指定公文特殊词列表（列表均为国内政要人名）",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "张三|李四",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Product",
+  "key": "Official_Digit",
+  "desc": "其他公文功能相关参数（等待进一步研究）",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "方正书宋_GBK",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Product",
+  "key": "VbaBuyUrl",
+  "desc": "指定 VBA 组件购买链接（64 位内测 12.1.0.18157）",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "https://plus.wps.cn/fab/vba-buy/",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Product",
+  "key": "VersionDescription",
+  "desc": "指定关于对话框版本号后缀",
+  "notes": [
+   "第一行：Release（大写）",
+   "第二行：release（小写）",
+   "第三行：Release Official Edition"
+  ],
+  "widget": "text",
+  "options": [],
+  "default": "Release",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Product",
+  "key": "VersionID",
+  "desc": "产品 SKU 特性参数",
+  "notes": [
+   "0 / 第一行：专业版（国内+国际版，启用密钥机制）",
+   "1 / 第二行：个人版 / 365 公开版（国内版，禁用密钥机制）",
+   "2 / 第三行：个人版（国际版，启?禁用密钥机制）",
+   "5 / 第四行：GNU/Linux 个人版 / 华为 PC 应用引擎定制版（国内版，启?用密钥机制）"
+  ],
+  "widget": "enum",
+  "options": [
+   {
+    "label": "专业版（国内+国际版，启用密钥机制）",
+    "value": "0"
+   },
+   {
+    "label": "个人版 / 365 公开版（国内版，禁用密钥机制）",
+    "value": "1"
+   },
+   {
+    "label": "个人版（国际版）",
+    "value": "2"
+   },
+   {
+    "label": "GNU/Linux 个人版 / 华为 PC 应用引擎定制版",
+    "value": "5"
+   }
+  ],
+  "default": "0",
+  "group": "版本标识",
+  "risk": "high"
+ },
+ {
+  "section": "Product",
+  "key": "VersionName",
+  "desc": "指定程序云服务 / 特色功能 / 会员专享 / Tools 功能以及协作和分享按钮地区版本（等待进一步研究）",
+  "notes": [
+   "这个选项有时可能也会出现在“Feature”段中；12.1.0 版本设置为专业版时，程序会提示授权已到期",
+   "personal：个人版 / 365 公开版（国内版，禁用密钥机制）",
+   "common：个人版（国际版，禁用密钥机制）",
+   "professional：专业版（国内+国际版，启?用密钥机制）",
+   "community：GNU/Linux 个人版 / 华为 PC 应用引擎定制版（国内版，启?用密钥机制）"
+  ],
+  "widget": "enum",
+  "options": [
+   {
+    "label": "个人版 / 365 公开版（国内版）",
+    "value": "personal"
+   },
+   {
+    "label": "个人版（国际版）",
+    "value": "common"
+   },
+   {
+    "label": "专业版（国内+国际版）",
+    "value": "professional"
+   },
+   {
+    "label": "GNU/Linux 个人版 / 华为定制版",
+    "value": "community"
+   }
+  ],
+  "default": "personal",
+  "group": "版本标识",
+  "risk": "high"
+ },
+ {
+  "section": "Support",
+  "key": "CNGCHFeature",
+  "desc": "指定是否支持国产化版本功能（公文域等）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EducationVersion",
+  "desc": "指定是否为教育版（1x.1.0），会启用部分专有功能",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "版本标识",
+  "risk": "medium"
+ },
+ {
+  "section": "Support",
+  "key": "ForceIntranet",
+  "desc": "指定程序是否强制使用专用网络环境（中国联通 11.8.2.12265）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IntranetDrive",
+  "desc": "指定是否启用私有化网盘，开启后会禁用部分功能（例如我的电脑中的云盘图标）",
+  "notes": [
+   "可能需要与上一条配合使用"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IntranetVersion",
+  "desc": "指定程序是否为内网专用版，开启后会禁用部分在线功能，企业云文档会改为使用指定的内网服务器",
+  "notes": [
+   "但保存→加密对话框中会变成登录账户入口的版本",
+   "对于 12 版本，应改为使用 IntranetVersion7 选项（中国电信 12.8.2.15091）"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "版本标识",
+  "risk": "medium"
+ },
+ {
+  "section": "Support",
+  "key": "IsEnhanceVersion",
+  "desc": "指定程序是否为 PDF 增强版本",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "1",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "Support2016SN",
+  "desc": "程序主要参数 Begin",
+  "notes": [
+   "如果没有标明是否禁止或禁用，则 true 为启用，false 为禁用",
+   "反之则为 true 禁用，false 不禁用",
+   "指定是否支持部分 WPS 2016 版序列号，禁用掉后会导致部分序列号被判定为无效"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SupportMENKFeature",
+  "desc": "指定程序是否支持蒙古文相关功能",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WPS365EnterpriseGuide",
+  "desc": "指定是否启用 WPS 365 企业指南，等待进一步研究（1x.1.0）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WPS365FeatureEnable",
+  "desc": "指定是否启用 WPS 365 功能（1x.1.0），作用未知（密文等待确认）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WPSExamVersion",
+  "desc": "指定是否为教育考试专用版 / 技能认证专用版（1x.1.0），作用未知",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WPSLiteVersion",
+  "desc": "指定是否为精简版本",
+  "notes": [
+   "已知主页中设置齿轮菜单中的“设置”、“皮肤中心” 和 “关于 WPS Office”选项会消失"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WPSPlusVersion",
+  "desc": "指定是否为 WPS 365 云办公专业版（1x.8.6）",
+  "notes": [
+   "开启后部分额外功能启动时会检查有效的企业授权",
+   "12.1.0 版本中此项可控制安装目录（单用户安装或全机安装）"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "版本标识",
+  "risk": "medium"
+ },
+ {
+  "section": "Support",
+  "key": "WuKuangCustomVersion",
+  "desc": "指定程序是否为中国五矿集团自定义版本，作用未知",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "0",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "CustomVersionNumber",
+  "desc": "自定义版本号（覆盖显示的版本）",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "",
+  "group": "版本标识",
+  "risk": "medium"
+ },
+ {
+  "section": "default",
+  "key": "DcAppKey",
+  "desc": "渠道 / 应用标识密钥",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "",
+  "group": "版本标识",
+  "risk": "medium"
+ },
+ {
+  "section": "default",
+  "key": "PipeNumber",
+  "desc": "管道编号 / 渠道编号",
+  "notes": [
+   "例：30.12013"
+  ],
+  "widget": "text",
+  "options": [],
+  "default": "",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "PrintProductName",
+  "desc": "产品显示名称（关于对话框 / 安装程序）",
+  "notes": [
+   "例：WPS 365 Office for Linux 2024 教育版办公软件V12"
+  ],
+  "widget": "text",
+  "options": [],
+  "default": "",
+  "group": "版本标识",
+  "risk": "medium"
+ },
+ {
+  "section": "default",
+  "key": "ProductIdentifier",
+  "desc": "产品标识符，用于区分授权类型",
+  "notes": [
+   "例：linux_365_edu / linux_365 / professional"
+  ],
+  "widget": "text",
+  "options": [],
+  "default": "",
+  "group": "版本标识",
+  "risk": "high"
+ },
+ {
+  "section": "default",
+  "key": "iscustom",
+  "desc": "是否为客户定制版本",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "版本标识",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "AutoNomInfoSvr",
+  "desc": "升级信息收集服务器 / 主动报活信息地址",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "http://updatecollect.wps.cn/wpscollect",
+  "group": "升级与更新",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "CustomAutoNomInfoSvr",
+  "desc": "自定义升级信息收集服务器 / 自定义主动报活信息地址（中国交建 11.8.2.11813）",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "http://wps.mycustom.server/wpsoffice/wpscollect",
+  "group": "升级与更新",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "CustomUpdateServer",
+  "desc": "自定义更新服务器（密文等待确认）",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "http://wps.mycustom.server/wpsoffice/updateserver/update",
+  "group": "升级与更新",
+  "risk": "medium"
+ },
+ {
+  "section": "Support",
+  "key": "DisableMainResourceVerification",
+  "desc": "指定是否禁用主要资源验证（YukiIsait_TZB 12.8.2.18014）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "升级与更新",
+  "risk": "high"
+ },
+ {
+  "section": "Support",
+  "key": "DisableUpdateCheck",
+  "desc": "指定是否禁用升级检查，作用未知（华为 PC 应用引擎 12.8.2.14766）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "升级与更新",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisalbeUpdateInfoCollect",
+  "desc": "是否禁用升级时信息收集（20240816 新的发现）",
+  "notes": [
+   "这是程序员拼写打错了吗 www"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "升级与更新",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "Update",
+  "desc": "指定是否启用升级功能",
+  "notes": [
+   "禁用后配置工具的升级设置选项卡会消失，部分联网功能受影响"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "升级与更新",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "LinuxDownloadPage",
+  "desc": "Linux 版下载页面地址",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "",
+  "group": "升级与更新",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "LinuxLatestVersionID",
+  "desc": "Linux 版最新版本 ID（升级判定用）",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "0",
+  "group": "升级与更新",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "UpdateDlg",
+  "desc": "是否显示升级对话框",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "升级与更新",
+  "risk": "low"
+ },
+ {
+  "section": "Account",
+  "key": "CompanyCode",
+  "desc": "指定组织代码（需指定默认登录模式为 SSO 专属账号）",
+  "notes": [
+   "第一行：内蒙古工业大学 12.1.0.16729",
+   "第三行：南京理工大学 12.1.0.17147"
+  ],
+  "widget": "text",
+  "options": [],
+  "default": "imut",
+  "group": "登录与账户",
+  "risk": "medium"
+ },
+ {
+  "section": "Account",
+  "key": "DefaultLoginType",
+  "desc": "账户登录相关参数",
+  "notes": [
+   "指定默认登录模式"
+  ],
+  "widget": "enum",
+  "options": [
+   {
+    "label": "（默认）",
+    "value": ""
+   },
+   {
+    "label": "SSO 专属账号",
+    "value": "SSO"
+   }
+  ],
+  "default": "SSO",
+  "group": "登录与账户",
+  "risk": "medium"
+ },
+ {
+  "section": "Account",
+  "key": "EnableSwitchOtherLoginType",
+  "desc": "指定是否允许切换为其他登录方法（左上角返回按钮）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "登录与账户",
+  "risk": "low"
+ },
+ {
+  "section": "Account",
+  "key": "internaljumphosts0",
+  "desc": "指定内部跳转主机（内蒙古艺术学院 12.1.0.17827，等待进一步研究）",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "\"open.imac.edu.cn\"",
+  "group": "登录与账户",
+  "risk": "low"
+ },
+ {
+  "section": "Product",
+  "key": "LoginWindowSize",
+  "desc": "指定登录窗口尺寸（上海交通大学 12.1.0.16929）",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "1200x800",
+  "group": "登录与账户",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CollectAuthInfoOnStartup",
+  "desc": "指定启动时是否收集授权信息",
+  "notes": [
+   "已知会导致限时序列号不可用显示已过期"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "登录与账户",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableAccount",
+  "desc": "程序主要参数 End",
+  "notes": [
+   "账户登录相关参数 Begin",
+   "如果没有标明是否禁止或禁用，则 true 为启用，false 为禁用",
+   "反之则为 true 禁用，false 不禁用",
+   "指定是否启用金山办公账号功能（该参数在 oem.ini 可用）"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "登录与账户",
+  "risk": "medium"
+ },
+ {
+  "section": "Support",
+  "key": "WPS365ForceLogin",
+  "desc": "指定是否启用 WPS 365 商业公开版强制登录（1x.1.0）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "登录与账户",
+  "risk": "low"
+ },
+ {
+  "section": "Auth",
+  "key": "KSNUpdateServerUrl",
+  "desc": "指定自定义序列号检查服务器",
+  "notes": [
+   "额外发现：https://snauth.wps.cn/api/serialNumber/auth"
+  ],
+  "widget": "url",
+  "options": [],
+  "default": "http://snauth.wps.cn",
+  "group": "服务器配置",
+  "risk": "medium"
+ },
+ {
+  "section": "Auth",
+  "key": "LicenseServerUrl",
+  "desc": "指定自定义登录账户服务器",
+  "notes": [
+   "下面第一行为 11.8.2.8555_Professional_VBA_gov 自带服务器参数",
+   "下面第二行是繁体中文专业版服务器参数",
+   "下面第三行是繁体中文金山 PDF 专业版服务器参数"
+  ],
+  "widget": "url",
+  "options": [],
+  "default": "http://plugin.plus.wpseco.cn/cts",
+  "group": "服务器配置",
+  "risk": "medium"
+ },
+ {
+  "section": "Auth",
+  "key": "ProActiveSnEncodedUrl",
+  "desc": "指定自定义序列号激活服务器 (?)",
+  "notes": [
+   "第一个为繁体中文版服务器，第二个为日语版服务器"
+  ],
+  "widget": "text",
+  "options": [],
+  "default": "\"KcAnUFZxRjn_6dA-rJicCmV4fBa1qj1IPx_p_uLQ8gIsk1my4S9nhX-hro3efYWxKY3GquRHnPV3QAXn6phxHic6mb5LhG49hiaxnJR_lHbBd50\"",
+  "group": "服务器配置",
+  "risk": "medium"
+ },
+ {
+  "section": "Auth",
+  "key": "ProBuySerialNumberUrl",
+  "desc": "专业版序列号购买链接 (繁体中文 11.8.2.11660)",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "http://www.besta.com.tw/",
+  "group": "服务器配置",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "BackupNewPluginMgrServer",
+  "desc": "备用插件管理服务器新（12.1.0.18196）",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "http://pc-plugin.wpscdn.cn/per-plugin/dl",
+  "group": "服务器配置",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "BackupPluginMgrServer",
+  "desc": "备用插件管理服务器（12.1.0.18196）",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "http://backupplugin.wps.cn/per-plugin/dl",
+  "group": "服务器配置",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "DefaultDiscordForAI",
+  "desc": "WPS AI Discord 讨论频道地址（国际版 12.2.0.17562）",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "https://discord.gg/g4mgzY4DUc",
+  "group": "服务器配置",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "DomainCfgLocalCustomPath",
+  "desc": "本地自定义域名配置文件 (晋城市政府 11.8.2.10393)",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "\"cfgs/domain.cfg\"",
+  "group": "服务器配置",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "DomainCfgUrl",
+  "desc": "自定义域名配置下发服务器",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "http://wpsplus.drcloud.net/ # 繁体中文",
+  "group": "服务器配置",
+  "risk": "medium"
+ },
+ {
+  "section": "Server",
+  "key": "InfoCollectServer",
+  "desc": "信息收集服务器 (?) (国家电网 11.8.2.8276)",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "http://wps.mycustom.server/wpsv6internet/infos.ads",
+  "group": "服务器配置",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "IntranetPluginsAuthServer",
+  "desc": "插件授权验证服务器（密文等待确认）",
+  "notes": [
+   "第一行为 11.8.2.8555_Professional_VBA_gov 自带参数",
+   "第二行是繁体中文金山 PDF 专业版服务器参数",
+   "第三行是中国中车 11.8.0.8671 服务器参数",
+   "未指定时金山 PDF 专业版提示“服务器配置为空”"
+  ],
+  "widget": "url",
+  "options": [],
+  "default": "\"http://plugin.plus.wpseco.cn/xva/\"",
+  "group": "服务器配置",
+  "risk": "medium"
+ },
+ {
+  "section": "Server",
+  "key": "IntranetPluginsICServer",
+  "desc": "增值数据收集服务器",
+  "notes": [
+   "下面第一行为 11.8.2.8555_Professional_VBA_gov 自带参数",
+   "下面第二行是繁体中文金山 PDF 专业版服务器参数"
+  ],
+  "widget": "url",
+  "options": [],
+  "default": "\"http://yun.plugintest.cn/xva/v1/plugin/stat\"",
+  "group": "服务器配置",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "JSPluginsServer",
+  "desc": "JS 插件需要的服务器（OA 助手，公文写作）",
+  "notes": [
+   "详细介绍见：https://qn.cache.wpscdn.cn/encs/doc/office_v13/index.htm",
+   "下行为蒙古文版自带参数"
+  ],
+  "widget": "url",
+  "options": [],
+  "default": "https://www.mklai.cn/wps/jsplugins.xml",
+  "group": "服务器配置",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "KsoProofreadServer",
+  "desc": "金山校对自定义服务器",
+  "notes": [
+   "下行为 11.8.2.8555_Professional_VBA_gov 自带参数"
+  ],
+  "widget": "url",
+  "options": [],
+  "default": "\"https://ksoepproofread.wps.cn/proof\"",
+  "group": "服务器配置",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "PluginMgrServer",
+  "desc": "插件管理服务器（64 位内测 12.1.0.18425）",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "http://wdl1.cache.wps.cn/per-plugin/dl",
+  "group": "服务器配置",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "QInfoCollectServer",
+  "desc": "QInfo 信息收集服务器（新的发现 20240914）",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "http://qinfo.wps.cn/qingoffice/infos.ads",
+  "group": "服务器配置",
+  "risk": "low"
+ },
+ {
+  "section": "Server",
+  "key": "QingUrl",
+  "desc": "可能是金山文档内网使用的服务器（密文等待确认）",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "http://wps.mycustom.server",
+  "group": "服务器配置",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CloudDocOnline",
+  "desc": "指定是否要启用在线云文档功能",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CloudFileMgrInUserCenterMenu",
+  "desc": "指定是否启用用户中心菜单中的云端文件管理器（粤政易专用版 10.8.2.7090）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CloudFonts",
+  "desc": "指定是否启用云字体（中国交建 PDF 11.8.0.8704）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CloudLink",
+  "desc": "指定是否启用文档编辑界面右侧菜单中的分享选项（工商银行 11.8.2.8555）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CloudStorage",
+  "desc": "指定是否启用云存储（20240905 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableCloudSyncSetting",
+  "desc": "指定是否禁用云同步设置（11.8.6.11021，20241121 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableCollabration",
+  "desc": "指定是否禁用协作功能（20240816 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableShareDocs",
+  "desc": "指定是否禁用文档共享（20240905 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableClientCooperation",
+  "desc": "指定是否启用客户端协作功能（繁体中文 11.8.2.11600，20240910 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableCloudDocs",
+  "desc": "指定是否启用 WPS 云文档（个人账户），在部分版本可能还会禁用主页右侧的侧边栏",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableCloudService",
+  "desc": "指定是否启用文档编辑界面中的云服务选项卡",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableNetwork",
+  "desc": "指定是否启用网络，作用未知（中国电信 12.8.2.15091）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableOnlineCooperation",
+  "desc": "指定是否启用在线协作",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IsDisableLoadCloudDocLib",
+  "desc": "指定是否禁用云文档库（韶关市党政机关 11.8.2.12085，等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "NotStartCloudSvrBroadcast",
+  "desc": "指定是否禁用云服务器广播，作用未知（中国电信 12.8.2.15091）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OnlineFeatures",
+  "desc": "指定是否启用在线功能",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OnlineWithoutCloudDoc",
+  "desc": "指定是否启用除云文档以外的在线功能",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SupportNewToCloud",
+  "desc": "指定是否支持新建至云端（20.2689 11.1.0.8799，等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "云服务与在线功能",
+  "risk": "low"
+ },
+ {
+  "section": "HomepagePlugin",
+  "key": "enabled",
+  "desc": "主页插件设置（职教考试专用版 11.8.2.10393，等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "L10N",
+  "key": "GUI_FONT[zh_CN]",
+  "desc": "指定程序界面使用的字体",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "微软雅黑, 宋体, SimSun, 方正宋体S-超大字符集, 文泉驿微米黑, 文泉驿正黑",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Language",
+  "key": "IsSwitchLang",
+  "desc": "语言相关设置（来自 GNU/Linux 版，未测试）",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "0",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "AfterService",
+  "desc": "是否启用国际版主页服务邮箱入口（11，来自日语版 11.8.2.10339）",
+  "notes": [
+   "第一行：0 / 禁用 / 国内版",
+   "第二行：1 / 启用 / 日语版"
+  ],
+  "widget": "int",
+  "options": [],
+  "default": "0",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CommonNewOnlieDoc",
+  "desc": "指定是否禁用新建在线文档（12.1.0，可禁用主页新建文档按钮右侧推荐）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CommonPersonalWelcomePage",
+  "desc": "指定使用普通个人版欢迎页面（GNU/Linux 12.1.0.17881）",
+  "notes": [
+   "已知关于页面中程序授权信息消失"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CommonStartPageSearch",
+  "desc": "指定是否禁用主页搜索框",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableAppCenterEntry",
+  "desc": "指定是否要禁用程序首页的应用按钮",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisablePromeStartPage",
+  "desc": "是否禁用程序主页",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableChangePromethusMode",
+  "desc": "指定是否允许切换窗口切换模式（是否支持整合模式设置）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "NotShowPromeDocerTabButton",
+  "desc": "是否禁用标题栏稻壳标签页",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "Prometheus",
+  "desc": "指定窗口管理模式是否启用默认使用整合模式",
+  "notes": [
+   "如程序支持经典模式推荐不启用"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "界面与外观",
+  "risk": "medium"
+ },
+ {
+  "section": "Support",
+  "key": "ShowWeChatQRCode",
+  "desc": "是否启用国内版主页微信客户服务二维码入口",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SpecialFeatureMode",
+  "desc": "文档编辑界面，特色功能 / 云服务的名称切换",
+  "notes": [
+   "当设置为 true 时为特色功能，当设置为 false 时为云服务"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "StartpageUsingCloudFileManager",
+  "desc": "是否启用主页新版云文件管理（1x.1.0）",
+  "notes": [
+   "新建文档页面的版本也会受影响"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "TouchUiMode",
+  "desc": "指定是否启用触摸模式",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WeChatCustomerService",
+  "desc": "指定是否启用微信支持服务按钮（已知正文编辑状态下有效）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WeiboPlugin",
+  "desc": "指定是否启用 WPS 微分享 / 输出为图片插件（来自果核剥壳）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "supportOfficeNav365",
+  "desc": "是否启用主页新版侧边栏（1x.1.0，365 版本专属？）",
+  "notes": [
+   "对于 12 版本还会隐藏新建文档页面上方的文档类型选择"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "AppCenterEntry",
+  "desc": "是否显示应用中心入口",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "AutoThemeTextColor",
+  "desc": "是否自动主题文字颜色",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "ChangePromethusMode",
+  "desc": "是否允许切换窗口管理模式",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "IsCreateNewFile",
+  "desc": "启动时是否自动新建文件",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "0",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "IsForceFushion",
+  "desc": "是否强制融合模式（多组件共用主窗口）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "LightQuickStart",
+  "desc": "是否启用轻量快速启动",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "OfficialMode",
+  "desc": "是否启用公文模式",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "OfficialModeEntry",
+  "desc": "是否显示公文模式入口",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "OfficialPrintingEntry",
+  "desc": "是否显示公文打印入口",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "OfficialTemplateEntry",
+  "desc": "是否显示公文模板入口",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "OfficialVersionContainCustomTemplateState",
+  "desc": "公文版本是否包含自定义模板",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "OfficialVersionContainLegalTemplateState",
+  "desc": "公文版本是否包含法律模板",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "PromeDefaultUseIndependMode",
+  "desc": "是否默认使用独立窗口模式",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "ReduceOfficialTemplateCount",
+  "desc": "是否精简公文模板数量",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "ShowCloseTabTips",
+  "desc": "关闭标签页时是否提示",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "0",
+  "group": "界面与外观",
+  "risk": "low"
+ },
+ {
+  "section": "Auth",
+  "key": "DisableVbaWhenNotInstalled",
+  "desc": "指定在没有安装 VBA 组件的时候，是否在用户试图切换到 VB 环境时进行相关提示",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "AllPremiumInOne",
+  "desc": "指定是否为高级功能合订本（日语 PDF Plus 版 11.2.0.10701）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "AppsBlockPluginMgr",
+  "desc": "指定应用是否阻止插件中心（等待进一步研究）",
+  "notes": [
+   "已知在 12.1.0.16929 会对应用中心造成影响"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "AssoWPS2009",
+  "desc": "是否关联 WPS Office 2009 版本（国家电网 11.8.2.8276）",
+  "notes": [
+   "根据采购单位 Staff 介绍，其内网的有些程序依赖于 WPS 2009 版本",
+   "2009 版本使用时间最长，2012 版本仅为过渡使用，随后改为使用 2016 版本"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CellphoneControl",
+  "desc": "指定是否要在云服务选项卡显示 WPS 演示的手机遥控功能",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CommonMIPadThirdPartyCopyrightInfoOpenInBrowser",
+  "desc": "指定小米平板版本是否应在内置浏览器打开「第三方模块版权信息」（12.1.0.17881）",
+  "notes": [
+   "关于对话框，默认调用系统文本编辑打开"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CommonSupportProofread",
+  "desc": "指定是否支持一般校对功能",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ConfidentialityLevelKeyWordAutoCheck",
+  "desc": "密级关键字相关",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "1",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DataRecoveryMaster",
+  "desc": "指定是否启用金山数据恢复大师应用",
+  "notes": [
+   "专业版可能没有，11.1.0.14252 测试通过"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DeployIntranetTemplateService",
+  "desc": "指定是否部署了内网模板服务，已知可以禁用自带部分模板和外网模板链接",
+  "notes": [
+   "当使用新版文件选择时不建议开启，会导致模板列表为空"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableEbookRead",
+  "desc": "指定是否禁用电子书格式阅读支持",
+  "notes": [
+   "来自金山 PDF 专业版 11.8.0.8863，12.1.0.16412 测试通过"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableFeedback",
+  "desc": "指定是否禁用反馈功能（日语 PDF Plus 版 11.2.0.10701）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableFileCollect",
+  "desc": "禁用文件收集（日语 PDF Plus 版 11.2.0.10701）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableIme",
+  "desc": "指定是否禁用预输入法（YukiIsait_TZB 11.8.2.11813）",
+  "notes": [
+   "详情请见 https://p.wpseco.cn/wiki/doc/64410de169b1c5662bf9d953"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableIntranetPluginsVerifyCertificate",
+  "desc": "其他内网插件参数（等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableJSIDE",
+  "desc": "是否禁用 JS 插件 IDE（GNU/Linux 11.8.2.11806）",
+  "notes": [
+   "具体的行为可能是「开发工具」选项卡直接消失，或无法切换 VB 和 JS 环境"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableOnlineMaterialLibrary",
+  "desc": "指定是否禁用在线材料库（个人版 12.1.0.18608，20241018 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableOnlineMeeting",
+  "desc": "指定是否禁用在线会议（繁体中文 11.8.2.11600，20240910 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableOnlineTemplateLibrary",
+  "desc": "指定是否禁用在线模板库（个人版 12.1.0.18608，20241018 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableOnlineUserAgreement",
+  "desc": "指定是否禁用在线用户协议（日语 PDF Plus 版 11.2.0.10701）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisablePDF",
+  "desc": "指定是否禁止 PDF、电子书文件被 WPS PDF 打开",
+  "notes": [
+   "来自 GNU/Linux 专用机 11.8.2.12019，12.1.0.16412 测试通过"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableQingEmbedReg",
+  "desc": "指定是否禁用轻办公嵌入注册（此电脑中的 WPS 网盘）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableSNOverNumberLimit",
+  "desc": "指定是否禁用超过序列号授权数量限制（商业版 12.1.0.18276，20241008 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableSetupPDFAsso",
+  "desc": "指定一般安装是否禁用 PDF 格式自动关联",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableSilentSetupPDFAsso",
+  "desc": "指定静默安装是否禁用 PDF 格式自动关联",
+  "notes": [
+   "金山 PDF 专业版 11.8.0.8760 测试有效，WPS 最新专业版默认不勾选"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableSmartForm",
+  "desc": "指定是否禁用智能表单功能（日语 PDF Plus 版 11.2.0.10701）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableUpdateExternalDataLinkDialog",
+  "desc": "指定是否禁用更新外部数据链接对话框（中国邮政集团专用版 11.8.2.9022，等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableWPSApplicationEntry",
+  "desc": "指定是否禁用应用市场入口（左侧边栏）（上海交通大学 12.1.0.16929）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableWPSCalendarEntry",
+  "desc": "指定是否禁用 WPS 日历入口（上海交通大学 12.1.0.16929）",
+  "notes": [
+   "是否有效还有待测试"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableWPSCooperationEntry",
+  "desc": "指定是否禁用 WPS 协作入口（上海交通大学 12.1.0.16929）",
+  "notes": [
+   "是否有效还有待测试"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableWPSDocerEntry",
+  "desc": "指定是否禁用稻壳儿入口（左侧边栏）（上海交通大学 12.1.0.16929）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableWPSEmailEntry",
+  "desc": "指定是否禁用 WPS 邮件入口（上海交通大学 12.1.0.16929）",
+  "notes": [
+   "是否有效还有待测试"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableWPSMeetingEntry",
+  "desc": "指定是否禁用 WPS 会议入口（上海交通大学 12.1.0.16929）",
+  "notes": [
+   "是否有效还有待测试"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableWPSPdfDeskTopShortcut",
+  "desc": "指定是否禁止创建 WPS PDF 快捷方式",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableWpsAcademy",
+  "desc": "指定是否禁用 WPS 学堂（日语 PDF Plus 版 11.2.0.10701）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DocPermission",
+  "desc": "指定是否启用文档权限功能（审阅选项卡）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DocerEntrance",
+  "desc": "指定是否启用稻壳素材入口",
+  "notes": [
+   "新版可能不适用，10.8.6.7164 测试通过"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EULAPopup",
+  "desc": "指定是否要在第一次启动程序时弹出许可协议对话框（对于静默安装很有用）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnCldSvrOnEmbed",
+  "desc": "是否在嵌入状态下启用云服务器（来自国家电网 11.8.2.8276，是否有效还有待测试）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableAIFunction",
+  "desc": "指定是否启用 AI 功能（64 位内测 12.1.0.18770，20241022 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableCoreEncryption",
+  "desc": "指定是否启用核密文件格式支持（可能是中国五矿集团内部格式）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableCustomFormatSecurityDoc",
+  "desc": "指定是否启用自定义安全文档格式（可能用于中国五矿集团定制程序，等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableDocerShop",
+  "desc": "指定是否启用稻壳商城",
+  "notes": [
+   "11.8.2.8625 以应用形式存在；新版以云服务选项卡中的稻壳按钮存在"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableEDUCourse",
+  "desc": "指定是否启用 WPS 精品课应用",
+  "notes": [
+   "新版可能不适用，11.8.2.8625 测试通过"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableETUof",
+  "desc": "指定是否启用 WPS 表格的 UOF 格式支持",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableKsoFormatProof",
+  "desc": "指定是否启用格式纠错功能（快速对公文格式进行纠错）",
+  "notes": [
+   "位于审阅选项卡 → 格式纠错 / FormatProof"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableMakeOutwardDoc",
+  "desc": "指定是否启用外发文档功能",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableNonfinanceOFDIcon",
+  "desc": "指定 OFD 组件是否使用是否非财务版图标（专业版为 false）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableNormalEncryption",
+  "desc": "指定是否启用普密文件格式支持（可能是中国五矿集团内部格式）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableOfficialGB",
+  "desc": "指定是否启用公文国标支持（商业版 12.1.0.18276）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableOnlineFunction",
+  "desc": "是否启用在线功能（20240816 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableOnlinePlugin",
+  "desc": "指定是否启用在线插件（12.8.2.18205，专业版中被禁用，20241005 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnablePdf2WordV2",
+  "desc": "是否启用 PDF 转 Word / Excel / 转换纯图 PDF 等功能",
+  "notes": [
+   "由于影响了 WPS PDF 转换选项卡下相关功能按钮的显示",
+   "如果设为 false 可能会出现程序闪退问题"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnablePlainWatermarkInfo",
+  "desc": "水印相关参数",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableProcessonFlow",
+  "desc": "指定是否启用流程图应用（1x.8.6，默认禁用）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableProcessonMind",
+  "desc": "账户登录相关参数 End",
+  "notes": [
+   "额外应用相关参数 Begin",
+   "如果没有标明是否禁止或禁用，则 true 为启用，false 为禁用",
+   "反之则为 true 禁用，false 不禁用",
+   "指定是否启用思维导图应用（1x.8.6，默认禁用）"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableProductIdentifierCollect",
+  "desc": "指定是否启用产品标识符收集（20240826 新的发现，等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableSNInfoCollect",
+  "desc": "指定是否启用序列号信息收集（20240826 新的发现，等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableSecDocRightsList",
+  "desc": "指定是否启用安全文档权限列表功能（安全选项卡→文档权限）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableTempleteShop",
+  "desc": "是否启用模板商店（20230911 新的发现，是否有效还有待测试）（密文等待确认）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableWPPUof",
+  "desc": "指定是否启用 WPS 演示的 UOF 格式支持",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableWPSClientCertConfig",
+  "desc": "双向认证时，使用 /office6/certcertpath 路径下的证书",
+  "notes": [
+   "支持版本：11019+"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableWPSOfficialWebsite",
+  "desc": "指定是否启用 WPS Office 官网入口",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableWPSUof",
+  "desc": "公文版和公文组件相关参数 End",
+  "notes": [
+   "标文通 / UOF 格式相关参数 Begin",
+   "如果没有标明是否禁止或禁用，则 true 为启用，false 为禁用",
+   "反之则为 true 禁用，false 不禁用",
+   "指定是否启用 WPS 文字的 UOF 格式支持"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EncryptWithoutAccount",
+  "desc": "不需要账户的加密功能开关（可能会禁用安全选项卡）",
+  "notes": [
+   "必须在 Feature 段禁用安全文档，否则保存对话框中选项不会消失，选择后程序还会卡顿好几秒"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnterpriseFileLock",
+  "desc": "其他相关选项（等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EquationEditor",
+  "desc": "指定是否启用 Design Science 公式编辑器",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ExpandTinyWebView",
+  "desc": "指定是否拓展 Tiny WebView（来自国家能源集团 11.8.2.12085）",
+  "notes": [
+   "已知会对登录页面造成影响"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ExportToOFD",
+  "desc": "指定是否启用 OFD 导出功能",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "FeedbackByMailInMenu",
+  "desc": "指定是否启用关于菜单 WPS 客服邮箱入口（10.8.2.7164）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "FileDialogDefWpsCloud",
+  "desc": "内网插件相关参数 End",
+  "notes": [
+   "其他等待进一步研究的参数 Begin",
+   "保存对话框可自定义 WPS 云文档（来自 423Down，等待进一步研究）"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "FileDialogWithWpsCloud",
+  "desc": "指定保存对话框是否使用支持云文档版本（10.8.2.7164）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "FileMenuDocumentHistory",
+  "desc": "指定是否启用历史文档菜单入口（文件 > 备份与恢复，工商银行 11.8.2.8555）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "FileRoamingShareLink",
+  "desc": "指定是否启用文件漫游链接分享功能（20240816 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "FileRoamingShellContextMenu",
+  "desc": "指定是否启用 WPS 云文档 / 文件漫游右键菜单（三峡集团商密测试包 11.8.2.8646）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "FileShareMode",
+  "desc": "指定文件分享模式（工商银行 11.8.2.8555）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ForbidEditInLoginSNAuth",
+  "desc": "指定是否基于登录序列号验证禁止文档编辑（商业版 12.1.0.18276，20241008 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ForbidSecdocSaveAsNormalDoc",
+  "desc": "指定是否禁止将安全文档另存为其他格式",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ForceSaveToSecurityDoc",
+  "desc": "指定保存文档时是否要强制保存为安全文档格式（不可选择其他格式）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "GDPRVersion",
+  "desc": "是否启用国际版 WPS Office 配置工具的「隐私设置」选项卡",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "GoogleAnalytics",
+  "desc": "指定是否启用谷歌分析",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "HideCloudSpace",
+  "desc": "指定是否隐藏云空间（WPS 365 商业版 12.1.0.18276，20240917 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "HideFreeTemplate",
+  "desc": "指定是否隐藏新建文档界面「查看免费模板」入口（华为 PC 应用引擎 12.8.2.14766）（密文等待确认）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "HideRightlistForNonSecdoc",
+  "desc": "指定是否对非安全文档隐藏权限列表功能（文件→文档加密→文档权限）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "HomePagePlugin",
+  "desc": "指定是否启用主页插件（中标麒麟专用机预装版 10.8.0.7058）",
+  "notes": [
+   "对于 2016 版本，我们要禁用这一参数，以禁止经典模式下工具栏中的稻壳素材图标"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "HttpsSecurityBypass",
+  "desc": "忽略 WPS 加载项的 https 报错，允许使用自签名证书（WPS 365 技能认证版 11.1.0.14252）",
+  "notes": [
+   "高版本生效，建议和 IgnoreSslErrors=true 一同加上"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IcibaWakeupInfoCollect",
+  "desc": "指定是否在唤起金山词霸时收集信息（20240826 新的发现，等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IgnoreSslErrors",
+  "desc": "忽略 WPS 加载项的 https 报错，允许使用自签名证书（WPS 365 技能认证版 11.1.0.14252）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "InstallJsapiService",
+  "desc": "开机自启动加载项进程，解决授权打开 58890 端口弹窗问题（中国联通 11.8.2.11716）",
+  "notes": [
+   "支持版本：Window 10912 Linux 10681",
+   "Windows 要在 [Setup] 中，Linux 要在 [Support] 中"
+  ],
+  "widget": "int",
+  "options": [],
+  "default": "1",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IntranetPluginsAuthType",
+  "desc": "指定内网插件的验证类型",
+  "notes": [
+   "0：硬件 ID 授权；1：账号授权；2：序列号授权"
+  ],
+  "widget": "int",
+  "options": [],
+  "default": "1",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IntranetPluginsNoAuth",
+  "desc": "指定内网插件是否无需认证（等待进一步研究）",
+  "notes": [
+   "已知 PDF 增强版本参数设置为 true"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IntranetPluginsVersion",
+  "desc": "国际版 / 多语言版相关参数 End",
+  "notes": [
+   "内网插件相关参数 Begin",
+   "这些参数与 PDF 增强版程序以及金山 PDF 专业版的授权机制相关联",
+   "指定是否为使用内网插件的版本",
+   "对于金山 PDF 专业版，如内网插件验证类型为序列号授权，则本项需要设置为 true"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IsArmyVersion",
+  "desc": "指定是否为金山麒麟 GFB 版本（GNU/Linux，银河麒麟 GFB 自带版 11.8.2.11929）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IsCustom",
+  "desc": "来自 GNU/Linux 版本的部分参数（等待进一步研究）",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "false # 中科方德商店 11.8.2.1126",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IsDeveloperChannel",
+  "desc": "指定是否为开发者体验计划版本 / Dev 版本（12.1.4.18961）",
+  "notes": [
+   "另请参阅：https://forum.wps.cn/topic/44417"
+  ],
+  "widget": "int",
+  "options": [],
+  "default": "1",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IsEulerOSInHwpad",
+  "desc": "其他等待进一步研究的参数 End",
+  "notes": [
+   "华为、小米平板的 PC 专版参数（GNU/Linux） Begin",
+   "指定是否为华为 PC 应用引擎版本（华为 PC 应用引擎 12.8.2.14766）"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IsGJBVersion",
+  "desc": "指定程序是否为国军标版本",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IsJapaneseEnterprise",
+  "desc": "指定是否为日语企业版（日语 PDF Plus 版 11.2.0.10701）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IsOverseaAdvertisePacket",
+  "desc": "指定是否为海外版本推广包",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IsSupportPhoto2pdf",
+  "desc": "指定是否启用图片转 PDF 应用（1x.8.6，默认禁用）",
+  "notes": [
+   "要求有效的企业授权"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IsUOS",
+  "desc": "指定是否为统信 UOS 版本（GNU/Linux，数字广东网络建设有限公司 11.8.2.11653）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "IsZYJ",
+  "desc": "指定是否为金山志远专用机版本（GNU/Linux，专用机 11.8.2.12019）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "JsApiAuthWebsite",
+  "desc": "解决弹出安装、卸载、授权访问 WPS 加载项的安全提醒弹窗问题",
+  "notes": [
+   "支持版本：Windows 10912 Linux 10386",
+   "详情请见 https://p.wpseco.cn/wiki/doc/63337c02d7c60f8bf1fd8675"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "JsApiNotifyForModal",
+  "desc": "当 WPS 客户端处于弹窗阻塞状态时，唤起的请求允许返回且返回值为 WPS Addon is not response",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "JsApiPlugin",
+  "desc": "WPS 安全版 / 安全文档 / 加密文档 / 私密文档 / 文档权限相关选项 End",
+  "notes": [
+   "JS 插件相关选项 Begin",
+   "详细介绍请见如下网页：",
+   "https://qn.cache.wpscdn.cn/encs/doc/office_v13/index.htm",
+   "https://p.wpseco.cn/wiki/doc/63337c65d7c60f8bf1fd867b",
+   "如果没有标明是否禁止或禁用，则 true 为启用，false 为禁用",
+   "反之则为 true 禁用，false 不禁用",
+   "指定是否要启用 JS 插件支持",
+   "开启 jsplugins.xml 模式，使 [server] 配置生效"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "JsApiShowWebDebugger",
+  "desc": "指定是否要启用 JS 插件调试器",
+  "notes": [
+   "打开开发者模式，允许打开 WPS 调试器"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "JsapiUseHttpsServer",
+  "desc": "打包 WPS 提供的 localhost 证书，解决当业务系统是 https 时，无法唤起 WPS 客户端的问题",
+  "notes": [
+   "国产机上这个配置不生效，需要手动导入证书"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "KsomiscFunctionCustomizationConfigPage",
+  "desc": "是否启用 WPS Office 配置工具的「功能定制」选项卡",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "KsomiscShowPdfAssociate",
+  "desc": "指定是否在配置工具中显示 PDF 关联选项",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "LocalPrivilegesState",
+  "desc": "指定本地权限状态（12.1.0.16729）",
+  "notes": [
+   "专业版默认启用，个人版 / 商业版默认禁用",
+   "已知本项目会影响新建文档界面是否显示公文模板"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "LoginSNAuth",
+  "desc": "指定是否启用登录序列号认证（GNU/Linux 12.1.0.17881、商业版 12.1.0.18276）",
+  "notes": [
+   "已知全局设置菜单中输入序列号选项消失，编辑文档界面左下角授权提示消失"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "MakeOutwardDocVersion",
+  "desc": "外发文档版本参数设置",
+  "notes": [
+   "设置为 0 或比 2 更高的值会导致按钮无反应",
+   "设置为 1 应该与未设置相同",
+   "设置为 2 会提示服务器问题（可能是自定义服务器选项）"
+  ],
+  "widget": "int",
+  "options": [],
+  "default": "2",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ModelEssay",
+  "desc": "是否启用 WPS 演示「云服务」选项卡下的「范文」功能（国家能源集团 11.8.2.12085）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "MulticlipboardEnableAccount",
+  "desc": "指定是否启用云剪贴板",
+  "notes": [
+   "新版可能不适用，11.8.2.8506 某定制版有相关选项"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "MulticomponentIcon",
+  "desc": "指定多组件图标是否使用 WPSOfficeIcon.dll 的资源",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "NeedPrivacyPolicyPopup",
+  "desc": "标文通 / UOF 格式相关参数 End",
+  "notes": [
+   "隐私与信息收集相关参数 Begin",
+   "是否开启隐私政策弹窗（20230911 新的发现，等待进一步研究）"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "NeedStartupFeatureGuide",
+  "desc": "指定是否启用第一次启动时的提示",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "NewFromOlineTemplates/TaskPane",
+  "desc": "指定是否启用从在线模板新建文档",
+  "notes": [
+   "新版可能不适用，10.8.6.7164 测试通过"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "NewWebLoginStyle",
+  "desc": "是否启用新版登录界面（11.8.x）",
+  "notes": [
+   "旧版登录界面会先让用户选择登录渠道（微信、钉钉等）"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "NseVisible",
+  "desc": "设定 Nse 组件是否可见（本项目可以禁用 WPS 网盘）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OCRTool",
+  "desc": "指定是否启用图片转文字功能（1x.8.6，默认禁用）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OemPackageLogin",
+  "desc": "程序是否为指定了登录参数的 OEM 安装包（内蒙古工业大学 12.1.0.16729）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OfdComponentEnable",
+  "desc": "指定是否启用 OFD 格式支持",
+  "notes": [
+   "对于专业版，还需要从个人版 / 商业版提取并补充 OFDPlugin 插件"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OfficialComponentEnable",
+  "desc": "指定自定义升级服务器 End",
+  "notes": [
+   "公文版和公文组件相关参数 Begin",
+   "如果没有标明是否禁止或禁用，则 true 为启用，false 为禁用",
+   "反之则为 true 禁用，false 不禁用",
+   "指定是否启用公文组件",
+   "Windows 下不建议开启（可能造成 WPS 文字的部分程序逻辑不正确）"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OfficialDoc",
+  "desc": "其他公文相关选项",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "true # gov 11.8.2.8555",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OfficialDocUseUOF",
+  "desc": "指定公文是否使用 UOF 格式",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OfficialFakeUOT",
+  "desc": "指定公文是否假装使用 UOF 格式（hunangov 11.8.2.10251）",
+  "notes": [
+   "与上一项的区别仍待进一步研究"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OfficialModeEnable",
+  "desc": "指定是否启用公文模式（GNU/Linux 12.8.2.16969）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OfficialModeGJBEnable",
+  "desc": "指定是否启用公文模式国军标支持",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OfficialPrintGJB",
+  "desc": "指定是否启用国标 / 国军标公文文印功能",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OfficialProofreading",
+  "desc": "指定是否启用金山校对支持",
+  "notes": [
+   "需安装金山黑马校对，似乎不限于 WPS 文字的公文模式",
+   "如果动了选项建议重装金山黑马校对"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OfficialVersionContainAffairsTemplateState",
+  "desc": "公文版本自带模板素材相关参数（12 版本）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OfficialViewEnable",
+  "desc": "指定是否启用公文浏览",
+  "notes": [
+   "已知当 OfficialComponentEnable 不为真时，WPS 文字的主页会出现「新建公文选项」"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OnlineAppcenter",
+  "desc": "指定是否启用在线应用中心（专业版 12.8.2.18205，20241018 新的发现）",
+  "notes": [
+   "12.8.2.21555 中，该参数会影响专业版应用中心按钮的启动"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OnlinePictures",
+  "desc": "指定是否使用在线图片（nfdw.gddw 10.8.2.6666）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OnlineSecurityDocument",
+  "desc": "指定是否启用在线安全文档（审阅选项卡：我的权限、权限列表）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OpenOdfFileFormat",
+  "desc": "其他 OFD 相关参数（等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "OverseaVersion",
+  "desc": "隐私与信息收集相关参数 End",
+  "notes": [
+   "国际版 / 多语言版相关参数 Begin",
+   "如果没有标明是否禁止或禁用，则 true 为启用，false 为禁用",
+   "反之则为 true 禁用，false 不禁用",
+   "指定是否为海外版本，开启后程序部分功能界面会变成海外版本"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "PDFAuthShowPrompt",
+  "desc": "指定是否显示 WPS PDF 窗口右上角的授权提示（金山 PDF 专业版）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "PDFMIPadEnableEpubAndMobi",
+  "desc": "其他小米平板 PC 专版版本参数（12.1.0.17881，等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "PDFPadFileProperty4KDisplay",
+  "desc": "其他平板 PC 专版参数（64 位内测 12.1.0.18770，等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "PDFReadOnlyVersion",
+  "desc": "华为、小米平板的 PC 专版参数（GNU/Linux） End",
+  "notes": [
+   "PDF 和 OFD 文件支持相关参数 Begin",
+   "指定程序是否为 PDF 只读版本"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "PdfSceneMode",
+  "desc": "是否启用 PDF 场景模式？（默认禁用）",
+  "notes": [
+   "将影响「HeadAnnotate」功能入口"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "PromeStytleUse365ThemeState",
+  "desc": "指定标题栏是否默认使用 WPS 365 图标",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "QingForceLogin",
+  "desc": "是否启用金山文档强制登录（即启用第一次启动时的登录界面，可能仅企业版）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "QingLoginOfflineMode",
+  "desc": "金山文档相关开关（等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "QingShowLoginWindowOnStartup",
+  "desc": "是否启用在启动时显示金山文档登录窗口",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "QingTrayIcon",
+  "desc": "指定是否启用 WPS 办公助手托盘图标",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ReportAllInfoToDataWarehouse",
+  "desc": "是否将所有信息报告至数据仓库（20231114 新的发现，等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ReportGetIpAddress",
+  "desc": "指定是否报告获得的 IP 地址（20240901 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "RightsManagementServices",
+  "desc": "是否启用「按人员限制权限」功能（文档加密）（11.8.x）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SaveSecurityDocAsDefFormat",
+  "desc": "指定保存文档时是否要默认保存为安全文档格式（可自行选择其他格式）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SecurityVersion",
+  "desc": "额外应用相关参数 End",
+  "notes": [
+   "WPS 安全版 / 安全文档 / 加密文档 / 私密文档 / 文档权限相关选项 Begin",
+   "如果没有标明是否禁止或禁用，则 true 为启用，false 为禁用",
+   "反之则为 true 禁用，false 不禁用",
+   "指定程序是否为专用安全版（文档安全，文档溯源）"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SerialNumberPhraseLink",
+  "desc": "是否启用产品管理中心中，输入序列号对话框左下角的购买链接",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ShareMemoryAuthForPDF2Word",
+  "desc": "是否为 PDF 转 Word / Excel / 转换纯图 PDF 等功能共享认证状态 (?)",
+  "notes": [
+   "会禁用 WPS PDF 转换选项卡下的相关功能按钮的显示"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ShowCustomerServiceQR",
+  "desc": "指定是否展示客户服务二维码（12.8.2.18205，20240917 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ShowSplashScreen",
+  "desc": "指定是否展示程序启动闪屏图片",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "ShowUpgradeInPromeHead",
+  "desc": "是否启用国际版账户升级功能入口（默认启用）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SmartOfficial",
+  "desc": "指定是否启用智能公文转换功能",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SpecialFeaturesShareFile",
+  "desc": "是否启用“分享”功能（火箭图标，位于特色功能 / 云服务选项卡）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "StandAlonePDF2Word",
+  "desc": "指定是否使用独立版 PDF 转 Word（个人版默认开启，专业版默认关闭）",
+  "notes": [
+   "当设为 true 时，可在未配置为 PDF 增强版时在应用中心启用“WPS PDF 转换”和“图片转 PDF”入口"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "StratWithNewDocPDF",
+  "desc": "指定首次启动是否打开新建 PDF 选项卡",
+  "notes": [
+   "来自国际版 12.2.0.13266"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SupportCloudPushMsg",
+  "desc": "指定是否支持云端推送消息（12.8.2.18205，20240917 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SupportDocAuthenticate",
+  "desc": "指定是否启用文档验证功能（安全选项卡，11.1.0.9021 测试通过，专业版可能没有）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SupportSplitMerge",
+  "desc": "是否启用文件菜单「文档拆分合并功能」（11.8.x）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SupportXaFullFeature",
+  "desc": "其他国际版/ 多语言版特定选项（等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "SyFontNameComboboxCreated",
+  "desc": "默认字体相关参数（等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "UninstallRemoveAssociations",
+  "desc": "是否启用国际版卸载程序「文件被 WPS 而不是其他办公软件打开」入口（默认启用）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "UpdateDisableVerifySig",
+  "desc": "是否验证升级程序签名有效性（中国电信 12.8.2.15091）",
+  "notes": [
+   "不配置时，默认校验"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "UpdateSchdTaskByKsolaunch",
+  "desc": "是否由 Ksolaunch.exe 触发升级计划任务（20240816 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "UpdateSvrCustomAddress",
+  "desc": "JS 插件相关选项 End",
+  "notes": [
+   "指定自定义升级服务器 Begin",
+   "密文等待确认"
+  ],
+  "widget": "url",
+  "options": [],
+  "default": "http://wps.mycustom.server/wpsoffice/updateserver/update",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "UseRoaming2015",
+  "desc": "指定是否使用 2015 版文档漫游（10.8.2.7164）",
+  "notes": [
+   "这里禁用可以帮助阻止文档漫游界面的加载"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "UseWPSAi",
+  "desc": "指定是否启用 WPS AI（20240816 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "UseWpsupdateXa",
+  "desc": "指定是否使用国际版程序升级",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WPP2WPS",
+  "desc": "其他（等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WPS365Login",
+  "desc": "指定是否以 WPS 365 方式登录，左侧会显示 WPS 365 Logo（1x.1.0）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WPSCloudLogin",
+  "desc": "指定是否支持 WPS 云登录（20240816 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WPSDriveEnabled",
+  "desc": "指定是否启用 WPS 网盘（12.8.2.18913，20241112 新的发现）（密文等待确认）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WPSPDFAsModule",
+  "desc": "其他 PDF 相关参数（等待进一步研究）",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "true # 新的发现 20231118",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WPSPDFEnhanceVersion",
+  "desc": "指定程序是否为 PDF 增强版，启用并配置完成后可启用专业版 PDF 编辑功能",
+  "notes": [
+   "需参照金山 PDF 专业版调整局域网插件参数，并安装增强版专用序列号",
+   "部分功能如 PDF 转图片，在启用前无授权检查，但启用后会提示企业专户授权",
+   "对于 2023 专业版本，本开关将影响新建菜单中的 PDF 选项"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WPSPDFStandalone",
+  "desc": "指定程序是否为独立的金山 PDF 专业版",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WppMediaPlayerOnPlugin",
+  "desc": "对接定制版本参数（等待进一步研究）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WppNewSlideNoDocer",
+  "desc": "指定 WPS 演示新建幻灯片是否启用稻壳模板（64 位内测 12.1.0.18878，20241025 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "WpsAssistOnlineTemplate",
+  "desc": "是否启用 WPS 助手在线模板（20240816 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "XiuTang",
+  "desc": "指定是否启用秀堂 H5 应用",
+  "notes": [
+   "已停止服务故新版不适用，11.8.2.8625 测试通过"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "developuseribbon",
+  "desc": "NP 皮肤配置项（苏州市姑苏区 11.8.2.12251）",
+  "notes": [
+   "GNU/Linux：true 是 2019，false 为2016"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "enableJsapiCustomProtocal",
+  "desc": "是否支持 OA 助手短协议（默认不支持，新版本注意都要手动添加这个配置）",
+  "notes": [
+   "支持版本：Windows 11718 以后（不包含 11718）"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "enableSandbox",
+  "desc": "指定是否禁用 WPS 沙箱保护（12 版本）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "enableofficialaiwrite",
+  "desc": "指定是否启用公文 AI 写作功能（商业版 12.1.0.17857）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "enablepdfsnprivilege",
+  "desc": "指定是否启用序列号特权",
+  "notes": [
+   "该项不仅仅影响 PDF 编辑功能的可用性，还影响智能公文功能的可用性"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "enablewps365privacyprotection",
+  "desc": "指定是否启用 WPS 365 隐私保护政策（WPS 365 教育版 12.8.2.18605）",
+  "notes": [
+   "登录界面的隐私保护提示会出现相应变化"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "forbidEditInForceLogin",
+  "desc": "指定当启用 WPS 365 商业公开版强制登录时，是否禁止内容编辑（1x.1.0）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "isSupportDocCloudSync",
+  "desc": "指定是否支持文档云端同步（12.8.2.18205，20240919 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "isSupportShareAndCooperation",
+  "desc": "指定是否支持分享与协作功能（12.8.2.15091，20241121 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "officialaiaccompanywrite",
+  "desc": "指定是否启用公文 AI 伴写功能（商业版 12.1.0.17857）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "officialaitypesetenable",
+  "desc": "指定是否启用公文 AI 类型设置（商业版 12.1.0.17857）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "showNewGuide_Xa",
+  "desc": "指定是否启用海外版新手指导 / Get Started",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "supportTeamDoc",
+  "desc": "指定程序是否支持团队文档（日语 PDF Plus 版 11.2.0.10701）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "setup",
+  "key": "OfdDefaultServiceProvider",
+  "desc": "OFD 默认服务提供者",
+  "notes": [
+   "0 = 使用 WPS 自带 OFD 组件"
+  ],
+  "widget": "int",
+  "options": [],
+  "default": "0",
+  "group": "功能开关",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "CommandTriggerInfoCollect",
+  "desc": "是否启用命令触发器信息收集",
+  "notes": [
+   "来自金山 PDF 专业版 11.8.0.8863"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableGlobalInfoCollect",
+  "desc": "指定是否禁用全局信息收集",
+  "notes": [
+   "注意：启用本项目将会阻止云套装版本（11.8.6）应用中心中在线应用列表的下发",
+   "详情请见 https://p.wpseco.cn/wiki/doc/63337c65d7c60f8bf1fd867b",
+   "关闭信息收集（优化 WPS 关闭速度）一节"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableMessagePush",
+  "desc": "指定是否禁用消息推送（繁体中文 11.8.2.11600，20240910 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DoNotSupportMessagePush",
+  "desc": "指定是否不支持消息推送（国际版 12.2.0.17562，20240902 新的发现）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableAppsCollect",
+  "desc": "屏蔽第三方软件信息收集（繁体中文 11.8.2.11653）（密文等待确认）",
+  "notes": [
+   "详情请见 https://p.wpseco.cn/wiki/doc/63337c65d7c60f8bf1fd867b",
+   "关闭信息收集（优化 WPS 关闭速度）一节"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableHideRecent",
+  "desc": "指定是否启用最近视图中的「隐藏最近文件记录」小眼睛图标",
+  "notes": [
+   "因为这个图标只有登录账户才能用，所以我们需要把此项禁用",
+   "并且必须将 switchOpctHideRecent 设置为 true",
+   "这时，小眼睛图标就会与全局设置中的开关冲突，所以无论在线或离线版本我们都需要将其禁用"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableHideRecentRecord",
+  "desc": "启用隐藏 / 屏蔽最近文件记录",
+  "notes": [
+   "在 12.8.2.15091 时，由于删除文件记录会导致文件被移动到回收站，我们会在离线版本中启用这一项，以禁用功能"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "switchOpctHideRecent",
+  "desc": "指定是否切换「隐藏最近文件记录」模式（默认为 false）",
+  "notes": [
+   "当 EnableHideRecent 设置为 false 时，我们必须将此项设置为 true，否则该功能选项在重启程序后会失效"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "UserAnalysis",
+  "key": "GAenabled",
+  "desc": "用户分析设置（来自 GNU/Linux 版，未测试）",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "0",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "DeviceSafeControl",
+  "desc": "设备安全控制",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "GlobalInfoCollect",
+  "desc": "是否启用全局信息收集",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "IsNeedSystemChecker",
+  "desc": "是否需要系统检查",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "0",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "IsPrintYBTime",
+  "desc": "是否打印水印时间",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "0",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "IsQuitApp",
+  "desc": "退出行为标记",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "0",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "ProductIdentifierCollect",
+  "desc": "是否收集产品标识信息",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "WPS365PrivacyProtection",
+  "desc": "WPS 365 隐私保护提示",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "隐私与数据收集",
+  "risk": "low"
+ },
+ {
+  "section": "Product",
+  "key": "CopyrightNoticeInAboutPage",
+  "desc": "指定主页→菜单→关于中的版权字符串",
+  "notes": [
+   "其中汉字必须为 UTF-8 编码"
+  ],
+  "widget": "text",
+  "options": [],
+  "default": "\"Copyright(C) 2024 Kingsoft Office Software Corporation Limited & All rights reserved.\"",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Product",
+  "key": "CopyrightNoticeWithCompanyName",
+  "desc": "指定文档编辑页面→设置→关于中的版权方公司名称，使用“\\n”换行",
+  "notes": [
+   "其中汉字必须为 UTF-8 编码"
+  ],
+  "widget": "text",
+  "options": [],
+  "default": "\"Kingsoft Office Software Corporation Limited\"",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Product",
+  "key": "CustomWindowTitle",
+  "desc": "自定义窗口标题（中煤集团 11.8.2.8696）",
+  "notes": [
+   "可能属于兼容性相关选项？"
+  ],
+  "widget": "text",
+  "options": [],
+  "default": "\"Microsoft Word\"",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Product",
+  "key": "HomePage",
+  "desc": "指定主页→设置→WPS 官方网站的链接",
+  "notes": [],
+  "widget": "url",
+  "options": [],
+  "default": "\"http://www.wps.com/\"",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Product",
+  "key": "copyrightversion",
+  "desc": "指定版权年份（GNU/Linux WPS 365 教育版 12.8.2.18605）",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "2023",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "AppDataToMyDocuments",
+  "desc": "指定是否要把 %AppData% 的参数文件等转移至我的文档下",
+  "notes": [
+   "授权文件（license2.dat）可能也会随之移动，导致当前授权信息消失"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DefaultFontTextColor",
+  "desc": "指定字体颜色功能地默认颜色（10 进制颜色代码）",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "16711680",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DisableAutoRoaming",
+  "desc": "指定是否禁用文档自动漫游（日语 PDF Plus 版 11.2.0.10701）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DocTabRoamingGuide",
+  "desc": "指定是否启用文档漫游指南（中国交建 PDF 11.8.0.8704）",
+  "notes": [
+   "已知可禁用 2016 版本中位于标签页栏右侧的文档漫游按钮"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "DocTabRoamingWorkSpace",
+  "desc": "指定是否禁用文档（特色功能）选项卡的文档漫游工作区（10.8.2.7164）（密文等待确认）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "FileRoaming",
+  "desc": "指定是否启用文件漫游（工商银行 11.8.2.8555）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "MemoryDefaultSaveAsDialogShowPath",
+  "desc": "指定是否记忆最后的「另存为」路径",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "RecentFontMaxCount",
+  "desc": "指定字体数量的最大记忆数量",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "3",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "default",
+  "key": "CopyrightVersion",
+  "desc": "版权年份",
+  "notes": [],
+  "widget": "text",
+  "options": [],
+  "default": "2023",
+  "group": "文档与模板",
+  "risk": "low"
+ },
+ {
+  "section": "Auth",
+  "key": "StartupRemindExpired",
+  "desc": "指定是否启用启动时授权到期提醒（GNU/Linux 12.1.0.17881）",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "授权与签名",
+  "risk": "low"
+ },
+ {
+  "section": "Auth",
+  "key": "TotalTrialDays",
+  "desc": "指定程序总共可以试用多少天",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "2147483647",
+  "group": "授权与签名",
+  "risk": "low"
+ },
+ {
+  "section": "Auth",
+  "key": "supportNormal",
+  "desc": "指定程序是否接受普通序列号 (GNU/Linux)",
+  "notes": [
+   "此处的“普通序列号”，可能指的是 Windows 版本的序列号"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "授权与签名",
+  "risk": "low"
+ },
+ {
+  "section": "Support",
+  "key": "EnableOemFileAesSignatureVerification",
+  "desc": "指定是否启用 OEM 文件的 AES 签名验证",
+  "notes": [
+   "对于 WPS 365 商业版，应在 Product.dat 中禁用本项目，防止 oem.ini 因本额外验证失败而被删除"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "授权与签名",
+  "risk": "high"
+ },
+ {
+  "section": "default",
+  "key": "NormalSerialNumber",
+  "desc": "是否接受普通序列号",
+  "notes": [],
+  "widget": "bool",
+  "options": [],
+  "default": "false",
+  "group": "授权与签名",
+  "risk": "high"
+ },
+ {
+  "section": "default",
+  "key": "PresetSerialNumber",
+  "desc": "预置序列号（加密的授权码）",
+  "notes": [
+   "不同子平台的序列号互不通用；修改会导致授权失效"
+  ],
+  "widget": "text",
+  "options": [],
+  "default": "",
+  "group": "授权与签名",
+  "risk": "high"
+ },
+ {
+  "section": "default",
+  "key": "SerialInfo",
+  "desc": "序列号类型标识",
+  "notes": [
+   "例：edu / pro / gov"
+  ],
+  "widget": "text",
+  "options": [],
+  "default": "",
+  "group": "授权与签名",
+  "risk": "high"
+ },
+ {
+  "section": "Feature",
+  "key": "16777347",
+  "desc": "取消注释，输出为图片功能将会被禁用（中国石油 11.8.2.8053）",
+  "notes": [],
+  "widget": "int",
+  "options": [],
+  "default": "0",
+  "group": "高级特性（Feature 段）",
+  "risk": "low"
+ },
+ {
+  "section": "Feature",
+  "key": "100663401",
+  "desc": "放开升级上报（中国中车 PDF 11.8.0.8671）",
+  "notes": [
+   "详情请见 https://p.wpseco.cn/wiki/doc/667b72d4342b803fb7d7b39c"
+  ],
+  "widget": "int",
+  "options": [],
+  "default": "1",
+  "group": "高级特性（Feature 段）",
+  "risk": "low"
+ },
+ {
+  "section": "Feature",
+  "key": "100663400",
+  "desc": "打开升级入口（中国中车 PDF 11.8.0.8671）",
+  "notes": [
+   "详情请见 https://p.wpseco.cn/wiki/doc/667b72d4342b803fb7d7b39c"
+  ],
+  "widget": "int",
+  "options": [],
+  "default": "1",
+  "group": "高级特性（Feature 段）",
+  "risk": "low"
+ },
+ {
+  "section": "Feature",
+  "key": "16777276",
+  "desc": "取消注释，调整部分授权参数选项（繁体中文 11.8.2.11653）",
+  "notes": [
+   "已知更新授权按钮消失，并启用程序启动时的序列号验证机制"
+  ],
+  "widget": "int",
+  "options": [],
+  "default": "1",
+  "group": "高级特性（Feature 段）",
+  "risk": "low"
+ },
+ {
+  "section": "Feature",
+  "key": "16777353",
+  "desc": "屏蔽所有信息收集",
+  "notes": [
+   "详情请见 https://p.wpseco.cn/wiki/doc/63337c65d7c60f8bf1fd867b",
+   "关闭信息收集（优化 WPS 关闭速度）一节"
+  ],
+  "widget": "int",
+  "options": [],
+  "default": "1",
+  "group": "高级特性（Feature 段）",
+  "risk": "low"
+ },
+ {
+  "section": "Patent",
+  "key": "LogicGroupShowExtensionButton",
+  "desc": "专用功能 (?) Begin",
+  "notes": [
+   "指定是否禁用「详细设置」按钮（日语版 11.8.2.10339）"
+  ],
+  "widget": "bool",
+  "options": [],
+  "default": "true",
+  "group": "高级特性（Feature 段）",
+  "risk": "low"
+ }
+]
